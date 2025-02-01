@@ -35,3 +35,12 @@ def greet4(**kwargs):
     print('Hello world')
 greet4(name='amitha')
 greet4()
+print('\n')
+
+# function wt keyword argument oe more
+
+def greet5(**kwargs):
+  for key, value in kwargs.items():
+    print (f'{key}:{value}')
+greet5(name='Kavitha', language='Python', role='Data Engineer')
+print('\n')
