@@ -8,3 +8,9 @@ greet()
 def greet1(name):
   print(f'Hello, {name}!')
 greet1('Akash')
+
+# Funtion with return value
+
+def add(a,b):
+  return a+b
+print(add(3,4))
