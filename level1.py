@@ -19,6 +19,10 @@ print(add(3,4))
 # Funtion with default value
 def greet2(name='World'):
   print(f'Hello, {name}!')
-
 greet2()
 greet2('kavitha')
+
+# funcion with variable - length argument
+def add(*args):
+  return sum(args)
+print(add(3,5,6,7))
