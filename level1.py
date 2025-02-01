@@ -14,3 +14,11 @@ greet1('Akash')
 def add(a,b):
   return a+b
 print(add(3,4))
+
+
+# Funtion with default value
+def greet2(name='World'):
+  print(f'Hello, {name}!')
+
+greet2()
+greet2('kavitha')
