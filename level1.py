@@ -65,3 +65,19 @@ def outer_function(x):
 
 add_five=outer_function(8)
 print(add_five(9))
+
+# decorator
+
+def decorator(func):
+  def wrapper(*args,**kwargs):
+    print('Before function call')
+    result=func(*args,**kwargs)
+    print('After function cal')
+    return result
+  return wrapper
+
+@decorator
+def say_hello(name):
+  print(f'Helo, {name}!')
+
+say_hello('Akash')
