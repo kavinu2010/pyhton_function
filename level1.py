@@ -51,3 +51,17 @@ def apply(func,value):
 def square(x):
   return x*x
 print(apply(square,7))
+
+# Lambda function
+square=lambda x:x*x
+print(square(7))
+print(apply(lambda x:x+1,6))
+
+#closure
+def outer_function(x):
+  def inner_fuction(y):
+    return x+y
+  return inner_fuction
+
+add_five=outer_function(8)
+print(add_five(9))
