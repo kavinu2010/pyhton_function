@@ -44,3 +44,10 @@ def greet5(**kwargs):
     print (f'{key}:{value}')
 greet5(name='Kavitha', language='Python', role='Data Engineer')
 print('\n')
+
+# A fucntion that accept or retur aother function
+def apply(func,value):
+  return func(value)
+def square(x):
+  return x*x
+print(apply(square,7))
