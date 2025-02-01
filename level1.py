@@ -26,3 +26,12 @@ greet2('kavitha')
 def add(*args):
   return sum(args)
 print(add(3,5,6,7))
+
+# function wt keyword argument
+def greet4(**kwargs):
+  if 'name' in kwargs:
+    print(f'Hello, {kwargs['name']}')
+  else:
+    print('Hello world')
+greet4(name='amitha')
+greet4()
